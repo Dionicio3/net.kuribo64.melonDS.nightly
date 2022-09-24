@@ -1,7 +1,18 @@
-- name: Flatpak Builder
-  uses: flatpak/flatpak-github-actions@v2
-    with:
-      # The relative path of the manifest file.
-      manifest-path: net.kuribo64.melonDS.nightly.appdata.xml
-      # The bundle name, by default it's app.flatpak
-      bundle: net.kuribo64.melonDS.nightly
+on:
+  push:
+    branches: [main]
+  pull_request:
+name: CI
+jobs:
+  flatpak:
+    name: "Flatpak"
+    runs-on: ubuntu-latest
+    container:
+      image: bilelmoussaoui/flatpak-github-actions:gnome-40
+      options: --privileged
+    steps:
+    - uses: actions/checkout@v2
+    - uses: bilelmoussaoui/flatpak-github-actions/flatpak-builder@v4
+      with:
+        bundle: net.kuribo64.melonDS.nightly
+        manifest-path: net.kuribo64.melonDS.nightly.appdata.xml
