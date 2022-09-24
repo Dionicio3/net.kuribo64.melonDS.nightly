@@ -16,4 +16,4 @@ jobs:
     - uses: bilelmoussaoui/flatpak-github-actions/flatpak-builder@v4
       with:
         bundle: net.kuribo64.melonDS.nightly
-        manifest-path: net.kuribo64.melonDS.nightly.appdata.xml
+        manifest-path: net.kuribo64.melonDS.nightly.yml
