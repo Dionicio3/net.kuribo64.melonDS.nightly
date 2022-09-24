@@ -1,0 +1,7 @@
+- name: Flatpak Builder
+  uses: flatpak/flatpak-github-actions@v2
+    with:
+      # The relative path of the manifest file.
+      manifest-path: net.kuribo64.melonDS.nightly.appdata.xml
+      # The bundle name, by default it's app.flatpak
+      bundle: net.kuribo64.melonDS.nightly
