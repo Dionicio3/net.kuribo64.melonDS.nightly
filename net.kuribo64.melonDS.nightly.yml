@@ -1,4 +1,4 @@
-app-id: net.kuribo64.melonDS
+app-id: net.kuribo64.melonDS.nightly
 runtime: org.kde.Platform
 runtime-version: '5.15-21.08'
 sdk: org.kde.Sdk
@@ -34,6 +34,5 @@ modules:
     sources:
       - type: git
         url: https://github.com/Arisotura/melonDS.git
-        commit: cce9de5ee1f51e906a644922b2ada6644d81287a
       - type: file
-        path: net.kuribo64.melonDS.appdata.xml
+        path: net.kuribo64.melonDS.nlightly.appdata.xml
