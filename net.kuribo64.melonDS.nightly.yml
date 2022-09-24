@@ -35,4 +35,4 @@ modules:
       - type: git
         url: https://github.com/Arisotura/melonDS.git
       - type: file
-        path: net.kuribo64.melonDS.nlightly.appdata.xml
+        path: net.kuribo64.melonDS.nightly.appdata.xml
