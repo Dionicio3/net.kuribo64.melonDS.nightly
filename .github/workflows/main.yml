@@ -1,6 +1,8 @@
 on:
-  workflow_run
-name: CI
+  schedule:
+    # * is a special character in YAML so you have to quote this string
+    - cron:  '0 12 * * *'
+name: aaa
 jobs:
   flatpak:
     name: "Flatpak"
